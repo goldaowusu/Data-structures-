@@ -1,0 +1,50 @@
+#NANA AKUA AGYAPONG
+6924921
+#https://github.com/goldaowusu
+#script for car deals
+#list of available cars and their prices
+cars={
+      'Rolls Royce':300000,
+      'Bugatti':400000,
+      'Ferrari':450000,
+      'Ford GT':200000,
+      'Lamborghini':500000,
+      'Jaguar':350000,
+      'Benz':700000,
+      'Toyota':340000,
+      'Honda':250000,
+      'Hyundai':440000,
+      'Kia':550000,
+      'Ram 1500':230000,
+      'GMC Sierra':320000,
+      'Mini Cooper':540000,
+      'Audi TT':542000,
+      'Fiesta':234500,
+      'Nissan':567800,
+      'Land Cruiser':900800,
+      'Sequoia':678000,
+      'BMC Mini':876500,
+      'Cord':780900,
+      'Waverly Electric':650000,
+      'Oldsmobile':546000,
+      'VW Beetle':809700,
+      'Range Rover':100980,
+      'Camry':890000,
+      'Jeed':768000,
+      'Hummer H2':789050,
+      'BMW':564000,
+      'Scion':213000}
+#get user input for car name
+carName=input("Enter a carName: ")
+#check if car name is in the list of available cars
+if carName in cars:
+    print("Yes")
+    #if car name is available,get its price
+    carPrice = cars[carName]
+    print(f"The price of {carName} is ${carPrice}.")
+else:
+    #if car name is not present,make the user aware
+    print(f"Sorry,{carName} is not available.")
+    
+        
+    
